@@ -1,7 +1,9 @@
-package com.update.net;
+package com.update.net.http;
 
 
 
+import com.update.net.Request;
+import com.update.net.RequestBody;
 import com.update.net.utils.TextUtils;
 
 import java.io.IOException;

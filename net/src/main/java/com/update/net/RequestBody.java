@@ -1,5 +1,7 @@
 package com.update.net;
 
+import com.update.net.http.HttpCodec;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.HashMap;

@@ -8,5 +8,5 @@ public interface CallBack {
 
     void onFailure(Call call, Throwable throwable);
 
-    void onSuccess(Call call, Response response);
+    void onResponse(Call call, Response response);
 }

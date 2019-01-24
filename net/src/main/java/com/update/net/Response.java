@@ -8,10 +8,10 @@ import java.util.Map;
  * @date : 2019/1/22.
  */
 public class Response {
-    int code;
+    private int code;
     int contentLength = -1;
-    Map<String, String> headers = new HashMap<>();
-    String body;
+    private Map<String, String> headers = new HashMap<>();
+    private String body;
     boolean isKeepAlive;
 
     public Response(int code, int contentLength, Map<String, String> headers, String body, boolean isKeepAlive) {

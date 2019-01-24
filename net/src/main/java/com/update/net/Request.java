@@ -42,10 +42,10 @@ public class Request {
     }
 
     public static final class Builder {
-        Map<String, String> headers = new HashMap<>();
-        String method = METHOD_GET;
-        HttpUrl httpUrl;
-        RequestBody requestBody;
+        private Map<String, String> headers = new HashMap<>();
+        private String method = METHOD_GET;
+        private HttpUrl httpUrl;
+        private RequestBody requestBody;
 
         public Builder addHeader(String key, String value) {
             headers.put(key, value);
@@ -68,7 +68,7 @@ public class Request {
                 this.httpUrl = new HttpUrl(url);
                 return this;
             } catch (MalformedURLException e) {
-                throw new IllegalStateException("http url format error!",e);
+                throw new IllegalStateException("http url format error!", e);
             }
         }
 
@@ -79,7 +79,7 @@ public class Request {
         }
 
         public Request build() {
-            if (httpUrl == null){
+            if (httpUrl == null) {
                 throw new IllegalStateException("url is null!");
             }
             return new Request(this);
