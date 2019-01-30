@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class Request {
 
-    public static final String METHOD_GET = "GRT";
+    public static final String METHOD_GET = "GET";
     public static final String METHOD_POST = "POST";
 
     private Map<String, String> headers;
